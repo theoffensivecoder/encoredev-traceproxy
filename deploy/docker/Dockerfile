@@ -1,6 +1,8 @@
 # Build stage
 FROM golang:1.25-alpine AS builder
 
+LABEL org.opencontainers.image.source=https://github.com/theoffensivecoder/encoredev-traceproxy
+
 WORKDIR /app
 
 # Install ca-certificates for HTTPS/gRPC
